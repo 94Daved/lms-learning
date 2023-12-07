@@ -1,0 +1,131 @@
+400: nothing (data) is sent from the client e.g. maybe to update or post 
+401: unauthorized: e.g. when there is "no user" and we tryna perform action on  server/db resourse,           
+404: not found
+403: unauthenticated, trying to access a restricted resouce on server, there is user but he is traspassing
+200: successful
+201: successful created
+500: internal error (server)
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+I installed a Extension: Next.nav: then ----->  crlt shift P: to see it
+  
+
+
+---------------------------------------------------------------------------------
+To get free Logos: ---> https://logoipsum.com/
+
+---------------------------------------------------------------------------------
+To handle error etc.. use: npm i react-hot-toast
+
+
+----------------------------------------------------------------------------------
+-Prisma & DB setup: npm i -D prisma  &  npx prisma init
+
+-Using a free instance of Mysql DB: https://www.freemysqlhosting.net/account/
+
+This  doesn't work
+---------------------------------------------------------------------------------
+Suppose we have a array of object, in order to know which object has "keys" of 
+ value which is not "null":
+        const requiredFields = [
+            course.title,
+            course.description,
+            course.imageUrl,
+            course.price,
+            course.categoryId,
+        ];
+
+        console.log(requiredFields.filter(Boolean));
+        
+this will return an array of those keys which are "NOT" null
+
+
+---------------------------------------------------------------------------------
+uploadthing: to upload images and videos
+
+
+---------------------------------------------------------------------------------
+tailwind property: "line-clamp-1" ---> truncate the line if if too long
+
+
+---------------------------------------------------------------------------------
+npm i @hello-pangea/dnd : For dragging and dropping
+
+
+---------------------------------------------------------------------------------
+npm i react-quill: Nice little Rich text-editor for fomating texts
+
+
+---------------------------------------------------------------------------------
+https://dashboard.mux.com/signup : for processing videos (playing, etc..)
+npm i @mux/mux-node
+npm i @mux/mux-player-react
+
+---------------------------------------------------------------------------------
+npm i zustand: state managment
+
+npm i react-confetti : to animation to congratulate after success of publishing 
+                       or finishing a course (celebration)
+---------------------------------------------------------------------------------
+npm i query-string : to combile multiple query etc.
+npm i react-icons : for more icons
+
+
+---------------------------------------------------------------------------------
+anything which is in the URL can be accessed in Server components Props: interface SearchPageProps {
+ 
+  searchParams: {
+     title: string;
+     categoryId: string;
+    }
+  };
+
+  const SearchPage = async ({ searchParams }: SearchPageProps) => {}..
+
+
+
+---------------------------------------------------------------------------------
+how to reset the entire prisma db data: npx prisma migrate reset
+
+---------------------------------------------------------------------------------
+For creating a chart e.g. for analytics use:
+  npm i recharts
+
+
+---------------------------------------------------------------------------------
+Adding this to the scripts when we want to deploy
+"postinstall": "prisma generate"
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+---------------------------------------------------------------------------------
+
+
+
+
+
